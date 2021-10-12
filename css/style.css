@@ -9,6 +9,9 @@ body {
 
 main {
   padding: 0px 40px; }
+  @media screen and (min-width: 600px) {
+    main {
+      padding: 0px 100px; } }
 
 section {
   margin-bottom: 100px; }
@@ -30,6 +33,9 @@ h1 {
   font-size: 90px;
   font-weight: 1;
   color: white; }
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 96px; } }
 
 h2 {
   text-align: center;
@@ -37,12 +43,18 @@ h2 {
   font-family: "Londrina Outline", serif;
   color: #F3BD52;
   font-size: 40px; }
+  @media screen and (min-width: 600px) {
+    h2 {
+      font-size: 60px; } }
 
 p {
   font-family: "Playfair Display", serif;
   color: #fff9;
   font-size: 20px;
   line-height: 35px; }
+  @media screen and (min-width: 600px) {
+    p {
+      font-size: 25px; } }
 
 .hero {
   display: flex;
@@ -50,6 +62,9 @@ p {
   justify-content: center;
   height: 100vh;
   padding: 0px 40px; }
+  @media screen and (min-width: 600px) {
+    .hero {
+      padding: 0px 100px; } }
   .hero p {
     margin-bottom: 10px; }
   .hero ul {
@@ -57,10 +72,21 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     text-align: center; }
+    @media screen and (min-width: 600px) {
+      .hero ul {
+        grid-template-columns: repeat(4, 1fr); } }
     .hero ul li {
       padding: 5px;
       border: 1px solid #F3BD52; }
+      @media screen and (min-width: 600px) {
+        .hero ul li {
+          padding: 10px; } }
 
+@media screen and (min-width: 600px) {
+  .intro {
+    display: flex;
+    align-items: center;
+    gap: 10px; } }
 .intro .profile {
   display: flex;
   justify-content: center; }
@@ -69,19 +95,28 @@ p {
   height: 130px;
   border-radius: 20%;
   margin: 50px 0px; }
+  @media screen and (min-width: 600px) {
+    .intro .me-pic {
+      transform: translateY(-20px); } }
 
 .skills-container h2 {
   font-size: 30px;
   color: white;
   margin-bottom: 90px; }
+  @media screen and (min-width: 600px) {
+    .skills-container h2 {
+      font-size: 40px; } }
 .skills-container .icons-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .skills-container .icons-container {
+      grid-template-columns: repeat(3, 1fr); } }
   .skills-container .icons-container i {
     font-size: 80px;
     color: white;
-    margin: 30px; }
+    margin: 30px 0px; }
 
 #portfolio h2 {
   margin-bottom: 50px; }
@@ -90,8 +125,17 @@ p {
   font-family: "Londrina Outline", serif;
   font-size: 30px;
   margin-bottom: 50px; }
+  @media screen and (min-width: 600px) {
+    #portfolio .cheeky-txt {
+      text-align: center; } }
+#portfolio .desk-tabl-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px; }
+  @media screen and (min-width: 600px) {
+    #portfolio .desk-tabl-grid {
+      grid-template-columns: repeat(2, 1fr); } }
 #portfolio .portfolio-cards {
-  margin-bottom: 40px;
   padding: 70px 30px;
   border: 2px solid #3E7CB1;
   border-radius: 5px;
@@ -129,6 +173,9 @@ footer {
   background-color: black;
   color: white;
   padding: 41px; }
+  @media screen and (min-width: 600px) {
+    footer {
+      padding: 70px 150px; } }
   footer .brand {
     margin-bottom: 15px;
     font-size: 16px; }
