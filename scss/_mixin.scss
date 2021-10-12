@@ -1,0 +1,13 @@
+
+
+@mixin desktop {
+    @media screen and (min-width: $desktopSize) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tabletSize) {
+        @content;
+    }
+}

@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #4B4F55;
+  font-family: Arial, Helvetica, sans-serif; }
+
+main {
+  padding: 0px 40px; }
+
+section {
+  margin-bottom: 100px; }
+
+span {
+  color: #F3BD52; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+li {
+  list-style: none;
+  font-family: "Playfair Display", serif; }
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Londrina Outline", serif;
+  font-size: 90px;
+  font-weight: 1;
+  color: white; }
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Londrina Outline", serif;
+  color: #F3BD52;
+  font-size: 40px; }
+
+p {
+  font-family: "Playfair Display", serif;
+  color: #fff9;
+  font-size: 20px;
+  line-height: 35px; }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 0px 40px; }
+  .hero p {
+    margin-bottom: 10px; }
+  .hero ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center; }
+    .hero ul li {
+      padding: 5px;
+      border: 1px solid #F3BD52; }
+
+.intro .profile {
+  display: flex;
+  justify-content: center; }
+.intro .me-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 20%;
+  margin: 50px 0px; }
+
+.skills-container h2 {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 90px; }
+.skills-container .icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .skills-container .icons-container i {
+    font-size: 80px;
+    color: white;
+    margin: 30px; }
+
+#portfolio h2 {
+  margin-bottom: 50px; }
+#portfolio .cheeky-txt {
+  color: white;
+  font-family: "Londrina Outline", serif;
+  font-size: 30px;
+  margin-bottom: 50px; }
+#portfolio .portfolio-cards {
+  margin-bottom: 40px;
+  padding: 70px 30px;
+  border: 2px solid #3E7CB1;
+  border-radius: 5px;
+  font-family: "Playfair Display", serif;
+  position: relative; }
+  #portfolio .portfolio-cards h3 {
+    color: white;
+    margin-bottom: 15px; }
+  #portfolio .portfolio-cards p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px; }
+  #portfolio .portfolio-cards a {
+    padding: 10px;
+    border: 2px solid #3E7CB1; }
+  #portfolio .portfolio-cards i {
+    font-size: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: white; }
+
+#contact p {
+  color: white;
+  text-align: center;
+  margin: 50px 0px; }
+#contact .contact-icons {
+  text-align: center; }
+  #contact .contact-icons i {
+    font-size: 50px;
+    color: white;
+    margin: 15px; }
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 41px; }
+  footer .brand {
+    margin-bottom: 15px;
+    font-size: 16px; }
+  footer .footer-list-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 15px 0px; }
+  footer ul {
+    line-height: 25px; }
+
+/*# sourceMappingURL=style.css.map */

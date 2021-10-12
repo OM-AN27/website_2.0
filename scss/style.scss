@@ -1,0 +1,247 @@
+@import 'variables';
+@import 'mixin';
+
+
+//reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $darkGrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+//globals
+
+main {
+    padding: 0px 40px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+span {
+    color: $yellow;
+}
+
+a {
+    text-decoration: none;
+    color:white ;
+}
+
+li {
+    list-style: none;
+    font-family: $main;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: $secondary;
+    font-size: 90px;
+    font-weight: 1;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $secondary;
+    color: $yellow;
+    font-size: 40px;
+}
+
+p {
+    font-family: $main;
+    color: #fff9;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+//main
+
+.hero {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0px 40px;
+
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        text-align: center;
+
+      li {
+          padding: 5px;
+          border: 1px solid $yellow;
+      }
+    }
+}
+
+//introduction 
+
+
+
+.intro {
+
+
+
+    .profile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .me-pic {
+        width: 130px;
+        height: 130px;
+        border-radius: 20%;
+        margin: 50px 0px;
+    }
+
+}
+
+//skills
+
+.skills-container {
+
+
+    h2 {
+        font-size: 30px;
+        color: white;
+        margin-bottom: 90px;
+    }
+
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        i {
+            font-size: 80px;
+            color: white;
+            margin: 30px;
+        }
+    }
+}
+
+
+//portfolio 
+
+#portfolio {
+
+    
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .cheeky-txt {
+        color: white;
+        font-family: $secondary;
+        font-size: 30px;
+        margin-bottom: 50px;
+
+    }
+
+    .portfolio-cards {
+        margin-bottom: 40px;
+        padding: 70px 30px;
+        border: 2px solid $blue;
+        border-radius: 5px;
+        font-family: $main;
+        position: relative;
+
+        h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        a {
+            padding: 10px;
+            border: 2px solid $blue;
+
+        }
+
+        i {
+            font-size: 50px;
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            color: white;
+        }
+
+    }
+}
+
+
+//contact
+
+#contact {
+    
+    p {
+        color: white;
+        text-align: center;
+        margin: 50px 0px;
+    }
+
+
+    .contact-icons {
+        text-align: center;
+
+        i {
+            font-size: 50px;
+            color: white;
+            margin: 15px;
+        }
+    }
+    
+}
+
+
+// footer 
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 41px;
+
+    .brand {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .footer-list-grid {
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 15px 0px;
+    }
+
+    ul {
+        line-height: 25px;
+    }
+}
+
+
+
+
+

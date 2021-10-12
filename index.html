@@ -8,21 +8,19 @@
     <meta name="keywords" content="web, developer, front-end, design, resume, HTML, CSS, JavaScript, sass">
     <link rel="stylesheet" href="css/style.css">
     <!-- font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Omar Lomeli &reg;</title>
 </head>
 <body>
     <section class='hero'>
         <div class="container">
-            <h1>omar lomeli</h1>
-            <p>Fron-End Web Developer</p>
-            <div class=ul-flex>
-                <ul>
-                    <li><a href="#"></a>Portfolio</li>
-                    <li><a href="about.html"></a>About</li>
-                    <li><a href="#"></a>Contact</li>
-                </ul>
-            </div>
+            <h1><span>o</span>mar lo<span>m</span>el<span>i</span></h1>
+            <p>Front-End Web Developer</p>
+            <ul>
+                <li><a href="#"><span>Portfolio</span></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
 
 
@@ -33,49 +31,79 @@
 
     <main>
         <section class='intro'>
-            <div class="profile">
-                <img src="#" alt="profile-omar">
+            <div class="description blue-margin">
+                <p><span>Hey</span>, thanks for stopping by!<br> I am a website deigner and 
+                developer based in Vancouver, BC. Ready to work with you and professionally grow together.</p>
             </div>
 
-            <div class="description blue-margin">
-                <p><span>Hey</span>, thanks for stopping by! I am a website deigner and 
-                developer based in Vancouver, BC. Ready to with you and professionally grow together.</p>
+            <div class="profile">
+                <img class='me-pic' src="images/me.JPG" alt="profile-omar">
             </div>
+
 
             <div class="van-skyline">
                 <img src="#" alt="van-sky">
             </div>
         </section>
 
-        <section class='skils-container'>
+        <section class='skills-container'>
             <div>
-                <h2>"i have a very particular set of skills..."</h2>
+                <h2>"I have a very particular set of skills..."</h2>
             </div>
 
-            <div class='blue-margin'>
-                <!-- font awesome icons -->
+            <div class='icons-container'>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-npm"></i>
+                <i class="fab fa-sass"></i>
+                <i class="fab fa-gulp"></i>
+                <i class="fab fa-node"></i>
             </div>
         </section>
 
         <section id="portfolio">
             <div>
                 <h2>portfolio</h2>
-                <p>this is what you came here for:</p>
+                <p class='cheeky-txt'>this is what you came here for:</p>
             </div>
-            <div class="portfolio-items blue-margin">
+            <div class="portfolio-cards">
                 <h3>New york Times API</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quasi!</p>
-                <button>See it <span>live</span>!</button>
+                <p>One page website that fetches the
+                    New York times top news of the 
+                    Day using its API.
+                    </p>
+                <a href="#">See it <span>live</span>!</a>
+                <i class="far fa-image"></i>
+            </div>
+            <div class="portfolio-cards">
+                <h3>Aloha Clothing</h3>
+                <p>One page static clothing website 
+                    That shows the latest trends of the 
+                    Store.                    
+                    </p>
+                <a href="#">See it <span>live</span>!</a>
+                <i class="far fa-image"></i>
+            </div><div class="portfolio-cards">
+                <h3>My Wedding</h3>
+                <p>My very own  personal website for  
+                    The day I tie the knot. You can come
+                    If you want, just…let me know. 
+                    </p>
+                <a href="#">See it <span>live</span>!</a>
+                <i class="far fa-image"></i>
             </div>
         </section>
 
         <section id='contact'>
             <div>
                 <h2>contact</h2>
-                <p>if you are interested in working together don't hesitate to let me know. Cheers!</p>
+                <p>If you are interested in working together don't hesitate to reach out. Cheers!</p>
             </div>
             <div class='contact-icons'>
-                <!-- font-awesome icons -->
+                <i class="fas fa-at"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
             </div>
         </section>
     </main>
@@ -83,7 +111,7 @@
     <footer>
         <div>
             <p>&reg; 1993-2021</p>
-            <p>Omar Lomeli All rights Reserved</p>
+            <p class='brand'>Omar Lomeli All rights Reserved</p>
             <hr>
             <div class="footer-list-grid">
                 <div>
