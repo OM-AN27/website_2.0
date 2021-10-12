@@ -15,6 +15,9 @@ main {
 
 section {
   margin-bottom: 100px; }
+  @media screen and (min-width: 1240px) {
+    section {
+      margin-bottom: 200px; } }
 
 span {
   color: #F3BD52; }
@@ -32,10 +35,15 @@ h1 {
   font-family: "Londrina Outline", serif;
   font-size: 90px;
   font-weight: 1;
-  color: white; }
+  color: white;
+  line-height: 80px; }
   @media screen and (min-width: 600px) {
     h1 {
       font-size: 96px; } }
+  @media screen and (min-width: 1240px) {
+    h1 {
+      font-size: 150px;
+      line-height: 140px; } }
 
 h2 {
   text-align: center;
@@ -55,6 +63,9 @@ p {
   @media screen and (min-width: 600px) {
     p {
       font-size: 25px; } }
+  @media screen and (min-width: 1240px) {
+    p {
+      font-size: 35px; } }
 
 .hero {
   display: flex;
@@ -67,6 +78,9 @@ p {
       padding: 0px 100px; } }
   .hero p {
     margin-bottom: 10px; }
+    @media screen and (min-width: 1240px) {
+      .hero p {
+        margin: 25px 0px; } }
   .hero ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -75,6 +89,9 @@ p {
     @media screen and (min-width: 600px) {
       .hero ul {
         grid-template-columns: repeat(4, 1fr); } }
+    @media screen and (min-width: 1240px) {
+      .hero ul {
+        grid-template-columns: 150px 150px 150px; } }
     .hero ul li {
       padding: 5px;
       border: 1px solid #F3BD52; }
@@ -98,6 +115,10 @@ p {
   @media screen and (min-width: 600px) {
     .intro .me-pic {
       transform: translateY(-20px); } }
+@media screen and (min-width: 1240px) {
+  .intro p {
+    text-align: center;
+    line-height: 60px; } }
 
 .skills-container h2 {
   font-size: 30px;
@@ -113,6 +134,9 @@ p {
   @media screen and (min-width: 600px) {
     .skills-container .icons-container {
       grid-template-columns: repeat(3, 1fr); } }
+  @media screen and (min-width: 1240px) {
+    .skills-container .icons-container {
+      grid-template-columns: repeat(4, 1fr); } }
   .skills-container .icons-container i {
     font-size: 80px;
     color: white;
@@ -128,6 +152,10 @@ p {
   @media screen and (min-width: 600px) {
     #portfolio .cheeky-txt {
       text-align: center; } }
+  @media screen and (min-width: 1240px) {
+    #portfolio .cheeky-txt {
+      font-size: 50px;
+      margin-bottom: 100px; } }
 #portfolio .desk-tabl-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -135,6 +163,9 @@ p {
   @media screen and (min-width: 600px) {
     #portfolio .desk-tabl-grid {
       grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (min-width: 1240px) {
+    #portfolio .desk-tabl-grid {
+      grid-template-columns: repeat(3, 1fr); } }
 #portfolio .portfolio-cards {
   padding: 70px 30px;
   border: 2px solid #3E7CB1;
@@ -168,6 +199,9 @@ p {
     font-size: 50px;
     color: white;
     margin: 15px; }
+    @media screen and (min-width: 1240px) {
+      #contact .contact-icons i {
+        font-size: 80px; } }
 
 footer {
   background-color: black;
@@ -176,14 +210,22 @@ footer {
   @media screen and (min-width: 600px) {
     footer {
       padding: 70px 150px; } }
-  footer .brand {
-    margin-bottom: 15px;
+  @media screen and (min-width: 1240px) {
+    footer {
+      padding: 70px 450px; } }
+  footer p {
     font-size: 16px; }
+    @media screen and (min-width: 1240px) {
+      footer p {
+        text-align: center; } }
   footer .footer-list-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 15px 0px; }
   footer ul {
     line-height: 25px; }
+    @media screen and (min-width: 1240px) {
+      footer ul {
+        text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

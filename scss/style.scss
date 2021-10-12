@@ -27,6 +27,10 @@ main {
 
 section {
     margin-bottom: 100px;
+
+    @include desktop {
+        margin-bottom: 200px;
+    }
 }
 
 span {
@@ -49,9 +53,15 @@ h1 {
     font-size: 90px;
     font-weight: 1;
     color: white;
+    line-height: 80px;
 
     @include tablet {
         font-size: 96px;
+    }
+
+    @include desktop {
+        font-size: 150px;
+        line-height: 140px;
     }
 }
 
@@ -76,6 +86,10 @@ p {
     @include tablet {
         font-size: 25px;
     }
+
+    @include desktop {
+        font-size: 35px;
+    }
 }
 
 
@@ -97,6 +111,10 @@ p {
     p {
         margin-bottom: 10px;
 
+        @include desktop {
+            margin:25px 0px;
+        }
+
     }
 
     ul {
@@ -107,6 +125,10 @@ p {
 
         @include tablet {
             grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include desktop {
+            grid-template-columns: 150px 150px 150px;
         }
 
         
@@ -152,6 +174,14 @@ p {
         }
     }
 
+    p {
+
+        @include desktop {
+            text-align: center;
+            line-height: 60px;
+        }
+    }
+
 }
 
 //skills
@@ -176,6 +206,10 @@ p {
 
         @include tablet {
             grid-template-columns: repeat(3,1fr);
+        }
+
+        @include desktop {
+            grid-template-columns: repeat(4,1fr);
         }
 
         i {
@@ -206,6 +240,11 @@ p {
             text-align: center;
         }
 
+        @include desktop {
+            font-size: 50px;
+            margin-bottom: 100px;
+        }
+
     }
 
     .desk-tabl-grid {
@@ -215,6 +254,10 @@ p {
 
         @include tablet {
             grid-template-columns: repeat(2,1fr);
+        }
+
+        @include desktop {
+            grid-template-columns: repeat(3,1fr);
         }
     }
 
@@ -272,6 +315,12 @@ p {
             font-size: 50px;
             color: white;
             margin: 15px;
+
+            @include desktop {
+                font-size: 80px;
+            }
+
+            
         }
     }
     
@@ -290,9 +339,18 @@ footer {
         padding: 70px 150px;
     }
 
-    .brand {
-        margin-bottom: 15px;
+    @include desktop {
+        padding: 70px 450px;
+    }
+
+    p {
         font-size: 16px;
+
+        @include desktop {
+            text-align: center;
+        }
+
+            
     }
 
     .footer-list-grid {
@@ -304,6 +362,9 @@ footer {
 
     ul {
         line-height: 25px;
+        @include desktop {
+            text-align: center;
+        }
     }
 }
 
