@@ -237,23 +237,39 @@ footer {
 .body-margn {
   padding: 0px 40px;
   margin-bottom: 100px; }
+  @media screen and (min-width: 600px) {
+    .body-margn {
+      padding: 100px; } }
 
 .abt-container {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center; }
   .abt-container h1 {
     transform: translateY(-40px); }
+    @media screen and (min-width: 600px) {
+      .abt-container h1 {
+        transform: translateY(-70px); } }
 
 .abt-description p {
   font-size: 16px;
   color: white; }
+  @media screen and (min-width: 600px) {
+    .abt-description p {
+      font-size: 20px; } }
+  @media screen and (min-width: 1240px) {
+    .abt-description p {
+      font-size: 25px;
+      line-height: 40px; } }
 
 .home-button {
   display: flex;
   justify-content: center;
   margin-top: 50px; }
+  @media screen and (min-width: 600px) {
+    .home-button {
+      margin-top: 80px; } }
   .home-button a {
     padding: 10px 50px;
     border: 1px solid #F3BD52;
