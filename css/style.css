@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #4B4F55;
   font-family: Arial, Helvetica, sans-serif; }
@@ -141,6 +144,9 @@ p {
     font-size: 80px;
     color: white;
     margin: 30px 0px; }
+    .skills-container .icons-container i:hover {
+      transform: translateY(-10px);
+      transition: .2s ease-in; }
 
 #portfolio h2 {
   margin-bottom: 50px; }
@@ -227,5 +233,31 @@ footer {
     @media screen and (min-width: 1240px) {
       footer ul {
         text-align: center; } }
+
+.body-margn {
+  padding: 0px 40px;
+  margin-bottom: 100px; }
+
+.abt-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .abt-container h1 {
+    transform: translateY(-40px); }
+
+.abt-description p {
+  font-size: 16px;
+  color: white; }
+
+.home-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; }
+  .home-button a {
+    padding: 10px 50px;
+    border: 1px solid #F3BD52;
+    font-size: 20px;
+    font-family: "Playfair Display", serif; }
 
 /*# sourceMappingURL=style.css.map */
