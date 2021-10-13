@@ -221,10 +221,6 @@ p {
             color: white;
             margin: 30px 0px;
 
-            &:hover {
-                transform: translateY(-10px);
-                transition: .2s ease-in;
-            }
 
             
         }
@@ -270,7 +266,8 @@ p {
         }
 
         @include desktop {
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(2,1fr);
+            margin: 0 150px;
         }
     }
 
@@ -304,6 +301,7 @@ p {
             right: 10px;
             bottom: 5px;
             color: white;
+            cursor: pointer;
         }
 
     }
@@ -436,11 +434,21 @@ footer {
          margin-top: 80px;   
     }
 
+ 
+
     a {
         padding: 10px 50px;
         border: 1px solid $yellow;
         font-size: 20px;
         font-family: $main;
+
+        @include desktop {
+            &:hover {
+                background: $yellow;
+                color: white;
+                transition: .3s ease;
+            }
+        }
 
     }
 }

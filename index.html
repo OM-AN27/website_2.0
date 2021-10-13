@@ -7,6 +7,8 @@
     <meta name="description" content="omar Lomeli front-end web developer portfolio website">
     <meta name="keywords" content="web, developer, front-end, design, resume, HTML, CSS, JavaScript, sass">
     <link rel="stylesheet" href="css/style.css">
+    <!-- AOS animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Omar Lomeli &reg;</title>
@@ -14,9 +16,9 @@
 <body>
     <section class='hero'>
         <div class="container">
-            <h1><span>o</span>mar<br>lo<span>m</span>el<span>i</span></h1>
-            <p>Front-End Web Developer</p>
-            <ul>
+            <h1 data-aos="fade-down" data-aos-delay="400" ><span>o</span>mar<br>lo<span>m</span>el<span>i</span></h1>
+            <p data-aos="fade-down" data-aos-delay="550">Front-End Web Developer</p>
+            <ul data-aos="fade-down" data-aos-delay="750">
                 <li><a href="#portfolio"><span>Portfolio</span></a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -51,48 +53,48 @@
             </div>
 
             <div class='icons-container'>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-npm"></i>
-                <i class="fab fa-sass"></i>
-                <i class="fab fa-gulp"></i>
-                <i class="fab fa-node"></i>
+                <i  data-aos="fade-up"  data-aos-delay="300" data-aos-once="true" class="fab fa-html5"></i>
+                <i  data-aos="fade-up"  data-aos-delay="400" data-aos-once="true" class="fab fa-css3-alt"></i>
+                <i  data-aos="fade-up"  data-aos-delay="500" data-aos-once="true" class="fab fa-js"></i>
+                <i  data-aos="fade-up"  data-aos-delay="600" data-aos-once="true" class="fab fa-npm"></i>
+                <i  data-aos="fade-up"  data-aos-delay="700" data-aos-once="true" class="fab fa-sass"></i>
+                <i  data-aos="fade-up"  data-aos-delay="800" data-aos-once="true" class="fab fa-gulp"></i>
+                <i  data-aos="fade-up"  data-aos-delay="900" data-aos-once="true" class="fab fa-node"></i>
             </div>
         </section>
 
         <section id="portfolio">
             <div>
                 <h2>portfolio</h2>
-                <p class='cheeky-txt'>this is what you came here for:</p>
+                <p class='cheeky-txt'>This is what you came here for:</p>
             </div>
             <div class='desk-tabl-grid'>
-                <div class="portfolio-cards">
+                <div data-aos="fade-right" data-aos-once="true" class="portfolio-cards">
                     <h3>New york Times API</h3>
                     <p>One page website that fetches the
                         New York times top news of the 
                         Day using its API.
                         </p>
                     <a href="#">See it <span>live</span>!</a>
-                    <i class="far fa-image"></i>
+                    <i class="far fa-image imgs"></i>
                 </div>
-                <div class="portfolio-cards">
+                <div data-aos="fade-left" data-aos-once="true" class="portfolio-cards">
                     <h3>Aloha Clothing</h3>
                     <p>One page static clothing website 
                         That shows the latest trends of the 
                         Store.                    
                         </p>
                     <a href="#">See it <span>live</span>!</a>
-                    <i class="far fa-image"></i>
+                    <i class="far fa-image imgs"></i>
                 </div>
-                <div class="portfolio-cards">
+                <div data-aos="fade-right" data-aos-once="true"class="portfolio-cards">
                     <h3>My Wedding</h3>
                     <p>My very own  personal website for  
                         The day I tie the knot. You can come
                         If you want, just…let me know. 
                         </p>
                     <a href="#">See it <span>live</span>!</a>
-                    <i class="far fa-image"></i>
+                    <i class="far fa-image imgs"></i>
                 </div>
             </div>
         </section>
@@ -110,7 +112,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer data-aos="fade-up" data-aos-once='true'>
         <div>
             <p>&reg; 1993-2021</p>
             <p class='brand'>Omar Lomeli All rights Reserved</p>
@@ -138,5 +140,7 @@
         </div> -->
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
 </body>
 </html>

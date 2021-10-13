@@ -144,9 +144,6 @@ p {
     font-size: 80px;
     color: white;
     margin: 30px 0px; }
-    .skills-container .icons-container i:hover {
-      transform: translateY(-10px);
-      transition: .2s ease-in; }
 
 #portfolio h2 {
   margin-bottom: 50px; }
@@ -171,7 +168,8 @@ p {
       grid-template-columns: repeat(2, 1fr); } }
   @media screen and (min-width: 1240px) {
     #portfolio .desk-tabl-grid {
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 150px; } }
 #portfolio .portfolio-cards {
   padding: 70px 30px;
   border: 2px solid #3E7CB1;
@@ -193,7 +191,8 @@ p {
     position: absolute;
     right: 10px;
     bottom: 5px;
-    color: white; }
+    color: white;
+    cursor: pointer; }
 
 #contact p {
   color: white;
@@ -275,5 +274,10 @@ footer {
     border: 1px solid #F3BD52;
     font-size: 20px;
     font-family: "Playfair Display", serif; }
+    @media screen and (min-width: 1240px) {
+      .home-button a:hover {
+        background: #F3BD52;
+        color: white;
+        transition: .3s ease; } }
 
 /*# sourceMappingURL=style.css.map */
