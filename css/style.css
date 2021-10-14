@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Playfair+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +8,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #4B4F55;
-  font-family: Arial, Helvetica, sans-serif; }
+  background-color: #4B4F55; }
 
 main {
   padding: 0px 40px; }
@@ -35,7 +35,7 @@ li {
 
 h1 {
   text-transform: uppercase;
-  font-family: "Londrina Outline", serif;
+  font-family: "Londrina Outline";
   font-size: 90px;
   font-weight: 1;
   color: white;
@@ -51,7 +51,7 @@ h1 {
 h2 {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Londrina Outline", serif;
+  font-family: "Londrina Outline";
   color: #F3BD52;
   font-size: 40px; }
   @media screen and (min-width: 600px) {
@@ -60,9 +60,9 @@ h2 {
 
 p {
   font-family: "Playfair Display", serif;
-  color: #fff9;
-  font-size: 20px;
-  line-height: 35px; }
+  color: #fff;
+  font-size: 27px;
+  line-height: 40px; }
   @media screen and (min-width: 600px) {
     p {
       font-size: 25px; } }
@@ -80,6 +80,7 @@ p {
     .hero {
       padding: 0px 100px; } }
   .hero p {
+    font-size: 25px;
     margin-bottom: 10px; }
     @media screen and (min-width: 1240px) {
       .hero p {
@@ -149,7 +150,7 @@ p {
   margin-bottom: 50px; }
 #portfolio .cheeky-txt {
   color: white;
-  font-family: "Londrina Outline", serif;
+  font-family: "Londrina Outline";
   font-size: 30px;
   margin-bottom: 50px; }
   @media screen and (min-width: 600px) {
@@ -171,11 +172,19 @@ p {
       grid-template-columns: repeat(2, 1fr);
       margin: 0 150px; } }
 #portfolio .portfolio-cards {
-  padding: 70px 30px;
-  border: 2px solid #3E7CB1;
+  border: 3px solid #3E7CB1;
   border-radius: 5px;
   font-family: "Playfair Display", serif;
   position: relative; }
+  #portfolio .portfolio-cards .project-images {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px; }
+    @media screen and (min-width: 1240px) {
+      #portfolio .portfolio-cards .project-images {
+        height: 350px; } }
+  #portfolio .portfolio-cards .prjct-descrptn {
+    padding: 30px; }
   #portfolio .portfolio-cards h3 {
     color: white;
     margin-bottom: 15px; }
@@ -187,12 +196,15 @@ p {
     padding: 10px;
     border: 2px solid #3E7CB1; }
   #portfolio .portfolio-cards i {
-    font-size: 50px;
+    font-size: 35px;
     position: absolute;
     right: 10px;
-    bottom: 5px;
+    bottom: 10px;
     color: white;
     cursor: pointer; }
+    #portfolio .portfolio-cards i:hover {
+      color: #F3BD52;
+      transition: .2s ease; }
 
 #contact p {
   color: white;
@@ -243,7 +255,6 @@ footer {
 .abt-container {
   height: 50vh;
   display: flex;
-  justify-content: center;
   align-items: center; }
   .abt-container h1 {
     transform: translateY(-40px); }
@@ -277,7 +288,6 @@ footer {
     @media screen and (min-width: 1240px) {
       .home-button a:hover {
         background: #F3BD52;
-        color: white;
         transition: .3s ease; } }
 
 /*# sourceMappingURL=style.css.map */
