@@ -163,7 +163,8 @@ p {
 #portfolio .desk-tabl-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px; }
+  gap: 20px;
+  overflow: hidden; }
   @media screen and (min-width: 600px) {
     #portfolio .desk-tabl-grid {
       grid-template-columns: repeat(2, 1fr); } }
