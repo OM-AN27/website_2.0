@@ -320,6 +320,24 @@ p {
 
         }
 
+        //dark overlay on weather app image
+
+        .w-overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: $dark-overlay, url('/images/vancouver.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 0px;
+        }
+
+        .forecast-degrees {
+            font-size: 80px;
+            color: white;
+
+        }
+
 
         //info bubble above the code logo
         .tooltip {
@@ -348,6 +366,7 @@ p {
             }
 
         }
+
 
         i {
             font-size: 30px;

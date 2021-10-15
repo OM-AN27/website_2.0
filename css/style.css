@@ -205,6 +205,17 @@ p {
     padding: 10px;
     border: 2px solid white;
     border-radius: 5px; }
+  #portfolio .portfolio-cards .w-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/vancouver.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px; }
+  #portfolio .portfolio-cards .forecast-degrees {
+    font-size: 80px;
+    color: white; }
   #portfolio .portfolio-cards .tooltip {
     visibility: visible;
     width: 60px;
