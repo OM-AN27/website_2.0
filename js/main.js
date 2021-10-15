@@ -6,7 +6,7 @@ $(document).ready(function(){
     const weatherCard = $('.weather-card');
 
     const key ='66aedf850e52872851f1e3d201a4d53c';
-    const weatherURL = `http://api.openweathermap.org/data/2.5/forecast?q=vancouver&appid=${key}`;
+    const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?q=vancouver&appid=${key}`;
 
     $.ajax({
         method: 'GET',
@@ -15,7 +15,7 @@ $(document).ready(function(){
     }).always(()=>{
         console.log('idk');
     }).done((data)=> {
-        
+
         const description = data.list[0].weather[0].description;
         const current = data.list[0].main.temp;
         const high = data.list[0].main.temp_max;

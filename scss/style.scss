@@ -326,7 +326,7 @@ p {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: $dark-overlay, url('/images/vancouver.jpg');
+            background-image: $dark-overlay, url('../images/vancouver.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 0px;
