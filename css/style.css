@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #4B4F55; }
+  background-color: #4b4f55; }
 
 main {
   padding: 0px 40px; }
@@ -23,10 +23,10 @@ section {
       margin-bottom: 200px; } }
 
 span {
-  color: #F3BD52; }
+  color: #f3bd52; }
 
 hr {
-  color: #F3BD52; }
+  color: #f3bd52; }
 
 a {
   text-decoration: none;
@@ -55,7 +55,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Londrina Outline";
-  color: #F3BD52;
+  color: #f3bd52;
   font-size: 40px; }
   @media screen and (min-width: 600px) {
     h2 {
@@ -82,6 +82,9 @@ p {
   padding: 0px 40px; }
   @media screen and (min-width: 600px) {
     .hero {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
       padding: 0px 100px; } }
   .hero p {
     font-size: 25px;
@@ -102,10 +105,24 @@ p {
         grid-template-columns: 150px 150px 150px; } }
     .hero ul li {
       padding: 5px;
-      border: 1px solid #F3BD52; }
+      border: 1px solid #f3bd52; }
       @media screen and (min-width: 600px) {
         .hero ul li {
           padding: 10px; } }
+  .hero .illustration-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; }
+    @media screen and (min-width: 1240px) {
+      .hero .illustration-container {
+        margin-top: 0; } }
+    .hero .illustration-container .hero-illustration {
+      width: 300px;
+      height: 400px; }
+      @media screen and (min-width: 1240px) {
+        .hero .illustration-container .hero-illustration {
+          width: 430px;
+          height: 600px; } }
 
 @media screen and (min-width: 600px) {
   .intro {
@@ -266,7 +283,7 @@ p {
     color: white;
     cursor: pointer; }
     #portfolio .portfolio-cards i:hover {
-      color: #F3BD52;
+      color: #f3bd52;
       transition: .2s ease; }
 
 #contact p {
@@ -345,12 +362,12 @@ footer {
       margin-top: 80px; } }
   .home-button a {
     padding: 10px 50px;
-    border: 1px solid #F3BD52;
+    border: 1px solid #f3bd52;
     font-size: 20px;
     font-family: "Playfair Display", serif; }
     @media screen and (min-width: 1240px) {
       .home-button a:hover {
-        background: #F3BD52;
+        background: #f3bd52;
         transition: .3s ease; } }
 
 /*# sourceMappingURL=style.css.map */

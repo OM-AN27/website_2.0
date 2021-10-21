@@ -113,8 +113,17 @@ p {
     padding: 0px 40px;
 
     @include tablet {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         padding: 0px 100px;
     }
+
+    // @include desktop {
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    //     align-items: center;
+    // }
 
 
     p {
@@ -151,6 +160,31 @@ p {
             padding: 10px;
         }
       }
+    }
+
+    .illustration-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        @include desktop {
+            margin-top: 0;
+        }
+
+        .hero-illustration {
+            width: 300px;
+            height: 400px;
+
+            // @include tablet {
+            //     width: 400px;
+            //     height: 500px;
+            // }
+
+            @include desktop {
+                width: 430px;
+                height: 600px;
+            }
+        }
     }
 }
 
