@@ -112,13 +112,13 @@ p {
   .hero .illustration-container {
     display: flex;
     justify-content: center;
-    margin-top: 50px; }
+    margin-top: 30px; }
     @media screen and (min-width: 1240px) {
       .hero .illustration-container {
         margin-top: 0; } }
     .hero .illustration-container .hero-illustration {
-      width: 300px;
-      height: 400px; }
+      width: 280px;
+      height: 350px; }
       @media screen and (min-width: 1240px) {
         .hero .illustration-container .hero-illustration {
           width: 430px;
