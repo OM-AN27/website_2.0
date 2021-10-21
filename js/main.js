@@ -23,12 +23,12 @@ $(document).ready(function(){
 
         weatherCard.append(`
         <div class='project-images w-overlay'>
-            <p class='forecast-degrees'>${Math.floor(current) - 272}°</p>
+            <p class='forecast-degrees'>${Math.floor(current) - 273}°c</p>
         </div>
         <div class='prjct-descrptn'>
         <h3>${data.city.name}\'s Weather Today</h3>
         <hr>
-        <p>Right now there is ${description} with a high of ${Math.floor(high) - 272}° and a low of ${Math.floor(low) - 272}°.</p>
+        <p>Right now there is ${description} with a high of ${Math.floor(high) - 273}° and a low of ${Math.floor(low) - 273}°.</p>
         <a href='https://openweathermap.org/' target='_blank'><span>Open Weather</span> &reg;</a>
         </div>`);
     }).fail((err)=> {
