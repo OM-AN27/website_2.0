@@ -108,7 +108,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    width: 100%;
+    height: 800px;
     background-color: black;
     padding: 0px 40px;
 
@@ -118,12 +119,6 @@ p {
         align-items: center;
         padding: 0px 100px;
     }
-
-    // @include desktop {
-    //     flex-direction: row;
-    //     justify-content: space-around;
-    //     align-items: center;
-    // }
 
 
     p {
@@ -204,7 +199,7 @@ p {
     .profile {
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+        margin: 50px 0px;
         position: relative;
 
         @include desktop {
@@ -453,29 +448,87 @@ p {
 
 #contact {
     
+    margin-bottom: 0;
     p {
         color: white;
         text-align: center;
         margin: 50px 0px;
     }
+    
+}
 
+.contact-form {
+    margin-bottom: 0;
+    background-color: $yellow;
 
-    .contact-icons {
-        text-align: center;
+    @include tablet {
+        margin: 0px 100px 100px;
+        border-radius: 10px;
+    }
 
-        i {
-            font-size: 50px;
-            color: white;
-            margin: 15px;
+    @include desktop {
+        margin: 0px 350px 100px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
 
-            @include desktop {
-                font-size: 80px;
-            }
-
-            
+        @include tablet {
+        padding: 20px 50px;
+          
         }
     }
     
+    input {
+        border: none;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 10px 0px;
+    }
+    
+    textarea {
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0px;
+        padding: 10px;
+        resize: none;
+    }
+    
+    .sbmt-btn {
+        font-family: $main;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: black;
+        cursor: pointer;
+
+        @include desktop {
+            align-self: center;
+            padding: 15px 80px;
+
+        }
+    }
+
+    .contact-icons {
+        text-align: center;
+    
+        i {
+            font-size: 50px;
+            color: white;
+            margin: 20px 15px 40px;
+    
+            @include desktop {
+                font-size: 50px;
+            }
+    
+            
+        }
+    }
 }
 
 

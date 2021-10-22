@@ -77,7 +77,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  width: 100%;
+  height: 800px;
   background-color: black;
   padding: 0px 40px; }
   @media screen and (min-width: 600px) {
@@ -135,7 +136,7 @@ p {
 .intro .profile {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin: 50px 0px;
   position: relative; }
   @media screen and (min-width: 1240px) {
     .intro .profile {
@@ -286,19 +287,64 @@ p {
       color: #f3bd52;
       transition: .2s ease; }
 
-#contact p {
-  color: white;
-  text-align: center;
-  margin: 50px 0px; }
-#contact .contact-icons {
-  text-align: center; }
-  #contact .contact-icons i {
-    font-size: 50px;
+#contact {
+  margin-bottom: 0; }
+  #contact p {
     color: white;
-    margin: 15px; }
+    text-align: center;
+    margin: 50px 0px; }
+
+.contact-form {
+  margin-bottom: 0;
+  background-color: #f3bd52; }
+  @media screen and (min-width: 600px) {
+    .contact-form {
+      margin: 0px 100px 100px;
+      border-radius: 10px; } }
+  @media screen and (min-width: 1240px) {
+    .contact-form {
+      margin: 0px 350px 100px; } }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+    @media screen and (min-width: 600px) {
+      .contact-form form {
+        padding: 20px 50px; } }
+  .contact-form input {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0px; }
+  .contact-form textarea {
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 10px;
+    resize: none; }
+  .contact-form .sbmt-btn {
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer; }
     @media screen and (min-width: 1240px) {
-      #contact .contact-icons i {
-        font-size: 80px; } }
+      .contact-form .sbmt-btn {
+        align-self: center;
+        padding: 15px 80px; } }
+  .contact-form .contact-icons {
+    text-align: center; }
+    .contact-form .contact-icons i {
+      font-size: 50px;
+      color: white;
+      margin: 20px 15px 40px; }
+      @media screen and (min-width: 1240px) {
+        .contact-form .contact-icons i {
+          font-size: 50px; } }
 
 footer {
   background-color: black;
