@@ -73,6 +73,36 @@ p {
     p {
       font-size: 35px; } }
 
+.main-nav {
+  position: fixed;
+  width: 100%;
+  text-align: end;
+  background-color: black;
+  z-index: 1000; }
+  .main-nav i {
+    font-size: 30px;
+    color: #f3bd52;
+    margin: 30px;
+    cursor: pointer; }
+    .main-nav i:hover {
+      color: white;
+      transition: .5s ease; }
+  .main-nav .ham-menu {
+    display: none; }
+  .main-nav .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 99;
+    background-color: #f3bd52;
+    text-align: center; }
+    .main-nav .active li {
+      font-size: 30px;
+      margin-top: 20px; }
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -93,23 +123,6 @@ p {
     @media screen and (min-width: 1240px) {
       .hero p {
         margin: 25px 0px; } }
-  .hero ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    text-align: center; }
-    @media screen and (min-width: 600px) {
-      .hero ul {
-        grid-template-columns: repeat(4, 1fr); } }
-    @media screen and (min-width: 1240px) {
-      .hero ul {
-        grid-template-columns: 150px 150px 150px; } }
-    .hero ul li {
-      padding: 5px;
-      border: 1px solid #f3bd52; }
-      @media screen and (min-width: 600px) {
-        .hero ul li {
-          padding: 10px; } }
   .hero .illustration-container {
     display: flex;
     justify-content: center;

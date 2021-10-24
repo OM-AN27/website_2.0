@@ -103,6 +103,51 @@ p {
 
 //main
 
+
+//navigation 
+
+.main-nav {
+    position: fixed;
+    width: 100%;
+    text-align: end;
+    background-color: black;
+    z-index: 1000;
+
+    i {
+        font-size: 30px;
+        color: $yellow;
+        margin: 30px;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+            transition: .5s ease;
+        }
+    }
+
+    .ham-menu {
+       display: none;
+    }
+
+    .active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 99;
+        background-color: $yellow;
+        text-align: center;
+
+        li {
+            font-size: 30px;
+            margin-top: 20px;
+
+        }
+    }
+}
+
 .hero {
 
     display: flex;
@@ -131,31 +176,31 @@ p {
 
     }
 
-    ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        text-align: center;
+    // ul {
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 1fr);
+    //     gap: 10px;
+    //     text-align: center;
 
-        @include tablet {
-            grid-template-columns: repeat(4, 1fr);
-        }
+    //     @include tablet {
+    //         grid-template-columns: repeat(4, 1fr);
+    //     }
 
-        @include desktop {
-            grid-template-columns: 150px 150px 150px;
-        }
+    //     @include desktop {
+    //         grid-template-columns: 150px 150px 150px;
+    //     }
 
         
 
-      li {
-        padding: 5px;
-        border: 1px solid $yellow;
+    //   li {
+    //     padding: 5px;
+    //     border: 1px solid $yellow;
 
-        @include tablet {
-            padding: 10px;
-        }
-      }
-    }
+    //     @include tablet {
+    //         padding: 10px;
+    //     }
+    //   }
+    // }
 
     .illustration-container {
         display: flex;

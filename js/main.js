@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+    //navigation menu
+
+    const hamMenu = $('.menu');
+    const menu = $('.ham-menu');
+    const menuLink = $('.menu-link');
+
+    hamMenu.click(()=> {
+        menu.toggleClass('active');
+    })
+
+    //remove menu once link in nav is clicked
+
+    menuLink.click(()=> {
+        menu.toggleClass('active');
+    })
+
 
     //weather app card.
 
