@@ -85,8 +85,7 @@ p {
     margin: 30px;
     cursor: pointer; }
     .main-nav i:hover {
-      color: white;
-      transition: .5s ease; }
+      color: white; }
   .main-nav .ham-menu {
     display: none; }
   .main-nav .active {
