@@ -8,7 +8,9 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #4b4f55; }
+  background-color: #4b4f55;
+  margin: 0 auto;
+  max-width: 1470px; }
 
 main {
   padding: 0px 40px; }
@@ -76,6 +78,7 @@ p {
 .main-nav {
   position: fixed;
   width: 100%;
+  max-width: 1470px;
   text-align: end;
   background-color: black;
   z-index: 1000; }

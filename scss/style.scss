@@ -17,6 +17,8 @@ html {
 
 body {
     background-color: $darkGrey;
+    margin: 0 auto;
+    max-width: 1470px;
 }
 
 
@@ -109,6 +111,7 @@ p {
 .main-nav {
     position: fixed;
     width: 100%;
+    max-width: 1470px;
     text-align: end;
     background-color: black;
     z-index: 1000;
