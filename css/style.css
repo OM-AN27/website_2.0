@@ -294,6 +294,20 @@ p {
     text-align: center;
     margin: 50px 0px; }
 
+.van-skyline {
+  position: relative;
+  height: 180px; }
+  .van-skyline img {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+  .van-skyline .van-1 {
+    z-index: 3; }
+  .van-skyline .van-2 {
+    z-index: 2; }
+  .van-skyline .van-3 {
+    z-index: 1; }
+
 .contact-form {
   margin-bottom: 0;
   background-color: #f3bd52; }
