@@ -76,7 +76,6 @@ p {
       font-size: 35px; } }
 
 .main-nav {
-  position: fixed;
   width: 100%;
   max-width: 1470px;
   text-align: end;
@@ -289,14 +288,38 @@ p {
 
 #contact {
   margin-bottom: 0; }
+  @media screen and (min-width: 1240px) {
+    #contact {
+      margin-bottom: 100px; } }
+  #contact .contact-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   #contact p {
     color: white;
     text-align: center;
-    margin: 50px 0px; }
+    margin: 50px 0px 30px; }
+  #contact i {
+    color: #f3bd52;
+    font-size: 40px;
+    animation: downArrow 2.5s infinite; }
 
+@keyframes downArrow {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 .van-skyline {
   position: relative;
-  height: 180px; }
+  height: 220px; }
+  @media screen and (min-width: 600px) {
+    .van-skyline {
+      height: 480px; } }
+  @media screen and (min-width: 1240px) {
+    .van-skyline {
+      display: none; } }
   .van-skyline img {
     position: absolute;
     bottom: 0;
@@ -313,11 +336,12 @@ p {
   background-color: #f3bd52; }
   @media screen and (min-width: 600px) {
     .contact-form {
-      margin: 0px 100px 100px;
-      border-radius: 10px; } }
+      display: grid;
+      grid-template-columns: 60% auto; } }
   @media screen and (min-width: 1240px) {
     .contact-form {
-      margin: 0px 350px 100px; } }
+      margin: 0px 350px 100px;
+      border-radius: 5px; } }
   .contact-form form {
     display: flex;
     flex-direction: column;
@@ -352,6 +376,10 @@ p {
         padding: 15px 80px; } }
   .contact-form .contact-icons {
     text-align: center; }
+    @media screen and (min-width: 600px) {
+      .contact-form .contact-icons {
+        display: flex;
+        align-items: center; } }
     .contact-form .contact-icons i {
       font-size: 50px;
       color: white;
