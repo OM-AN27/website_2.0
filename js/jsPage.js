@@ -36,8 +36,8 @@ fizzInput.addEventListener('keypress', (e)=> {
 const isPalindrome = () => {
     let palContainer = document.querySelector('.pal-output');
     let pal1 = document.querySelector('.pal1');
-    pal1.value.toLowerCase();
-    let reversed = pal1.value.split('').reverse().join('');
+    let palLowerCase = pal1.value.toLowerCase();
+    let reversed = pal1.value.split('').reverse().join('').toLowerCase();
 
     //reset content html
     palContainer.innerHTML='';
@@ -46,7 +46,7 @@ const isPalindrome = () => {
     if (!isNaN(pal1.value)) {
         palContainer.innerHTML="<h2 class='pal-answer-nan'>Needs to be a word >:|</h2>";
 
-    }else if (pal1.value === reversed) {
+    }else if (palLowerCase === reversed) {
         palContainer.innerHTML="<h2 class='pal-answer-right'>True :D</h2>";
     }else {
         palContainer.innerHTML="<h2 class='pal-answer-wrong'>False :(</h2>";
