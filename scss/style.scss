@@ -792,6 +792,11 @@ footer {
 .js-main {
     margin: 0 20px;
     padding: 0;
+
+    @include desktop {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 .fizz-input, .pal1 {

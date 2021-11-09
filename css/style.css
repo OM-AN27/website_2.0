@@ -510,6 +510,10 @@ footer {
 .js-main {
   margin: 0 20px;
   padding: 0; }
+  @media screen and (min-width: 1240px) {
+    .js-main {
+      max-width: 500px;
+      margin: 0 auto; } }
 
 .fizz-input, .pal1 {
   border: 2px solid white;
