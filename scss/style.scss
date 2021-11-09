@@ -161,6 +161,7 @@ p {
     height: 800px;
     background-color: black;
     padding: 0px 40px;
+    margin-bottom: 0;
 
     @include tablet {
         flex-direction: row;
@@ -198,6 +199,43 @@ p {
                 width: 430px;
                 height: 600px;
             }
+        }
+    }
+}
+
+
+.js-test {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #3E7CB1;
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        padding: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+        font-family: $main;
+        line-height: 20px;
+
+        @include desktop {
+            font-size: 20px;
+        }
+
+    }
+
+    i {
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+
+        @include desktop {
+            margin-top: 0;
+            margin-left: 10px;
         }
     }
 }
