@@ -563,6 +563,12 @@ label {
     background-color: white;
     color: black; }
 
+.check {
+  border-color: green; }
+
+.cross {
+  border-color: red; }
+
 .pal-output {
   display: flex;
   align-items: center;

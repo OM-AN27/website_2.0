@@ -864,6 +864,14 @@ label {
     }
 }
 
+.check {
+    border-color: green;
+}
+
+.cross {
+    border-color: red;
+}
+
 .pal-output {
     display: flex;
     align-items: center;

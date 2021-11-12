@@ -1,5 +1,6 @@
 let fizzInput = document.querySelector('.fizz-input');
 
+
 fizzInput.addEventListener('keypress', (e)=> {
     if(e.key === 'Enter') {
         let fizzContainer = document.querySelector('.fizz-buzz-output');
@@ -55,3 +56,37 @@ const isPalindrome = () => {
     
 }
 
+
+//small variables quiz
+
+
+const varToF = () => {
+
+    let btns = document.querySelectorAll('.btn');
+    let scoreOutput = document.querySelector('.score');
+    let score = 0;
+    
+    btns.forEach(btn => {
+        btn.addEventListener('click', (e)=> {
+            e.preventDefault();
+            
+            if(btn.className.includes('right')) {
+                score++;
+                btn.classList.toggle('check');
+                btn.disabled=true;
+            }else if(btn.className.includes('wrong')){
+                btn.classList.toggle('cross');
+            }
+
+            if(score <= 3) {
+                scoreOutput.innerHTML=`Your Score: ${score}/3`
+            }else {
+                return
+            }
+        })
+    }) 
+
+    
+}
+
+varToF();
