@@ -195,6 +195,10 @@ p {
             width: 280px;
             height: 350px;
 
+            @include tablet {
+                transform: translateY(-50px);
+            }
+
             @include desktop {
                 width: 430px;
                 height: 600px;
@@ -775,6 +779,14 @@ footer {
 
 // ------------------ JS page ------------------------ 
 
+
+
+code {
+    font-family: Consolas;
+    color: crimson;
+    padding: 2px;
+    background-color: #f1f1f1;
+}
 
 .js-h2 {
     font-family: Arial, Helvetica, sans-serif;

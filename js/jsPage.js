@@ -81,7 +81,7 @@ const varToF = () => {
             if(score <= 3) {
                 scoreOutput.innerHTML=`Your Score: ${score}/3`
             }else {
-                return
+                return;
             }
         })
     }) 

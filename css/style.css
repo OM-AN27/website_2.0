@@ -136,6 +136,9 @@ p {
     .hero .illustration-container .hero-illustration {
       width: 280px;
       height: 350px; }
+      @media screen and (min-width: 600px) {
+        .hero .illustration-container .hero-illustration {
+          transform: translateY(-50px); } }
       @media screen and (min-width: 1240px) {
         .hero .illustration-container .hero-illustration {
           width: 430px;
@@ -495,6 +498,12 @@ footer {
       .home-button a:hover {
         background: #f3bd52;
         transition: .3s ease; } }
+
+code {
+  font-family: Consolas;
+  color: crimson;
+  padding: 2px;
+  background-color: #f1f1f1; }
 
 .js-h2 {
   font-family: Arial, Helvetica, sans-serif;
