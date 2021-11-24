@@ -1,7 +1,7 @@
 let fizzInput = document.querySelector('.fizz-input');
 
 
-fizzInput.addEventListener('keypress', (e)=> {
+fizzInput.addEventListener('keypress', (e) => {
     if(e.key === 'Enter') {
         let fizzContainer = document.querySelector('.fizz-buzz-output');
 
@@ -32,7 +32,7 @@ fizzInput.addEventListener('keypress', (e)=> {
 
         
     }
-})
+});
 
 const isPalindrome = () => {
     let palContainer = document.querySelector('.pal-output');
@@ -54,7 +54,7 @@ const isPalindrome = () => {
 
     }
     
-}
+};
 
 
 //small variables quiz
@@ -79,14 +79,14 @@ const varToF = () => {
             }
 
             if(score <= 3) {
-                scoreOutput.innerHTML=`Your Score: ${score}/3`
+                scoreOutput.innerHTML=`Your Score: ${score}/3`;
             }else {
                 return;
             }
-        })
-    }) 
+        });
+    }) ;
 
     
-}
+};
 
 varToF();

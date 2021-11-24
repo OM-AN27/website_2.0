@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'mixin';
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Playfair+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 //reset
 
@@ -82,10 +82,10 @@ h2 {
     text-transform: uppercase;
     font-family: $secondary;
     color: $yellow;
-    font-size: 40px;
-
+    font-size: 60px;
+    
     @include tablet {
-        font-size: 60px;
+        font-size: 70px;
     }
 }
 
@@ -503,6 +503,10 @@ p {
 
 #contact {
     margin-bottom: 0;
+
+    h2 {
+        text-align: start;
+    }
 
     @include desktop {
         margin-bottom: 100px;

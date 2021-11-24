@@ -8,13 +8,13 @@ $(document).ready(function(){
 
     hamMenu.click(()=> {
         menu.toggleClass('active');
-    })
+    });
 
     //remove menu once link in nav is clicked
 
     menuLink.click(()=> {
         menu.toggleClass('active');
-    })
+    });
 
 
     //weather app card.
@@ -49,6 +49,6 @@ $(document).ready(function(){
         </div>`);
     }).fail((err)=> {
         console.error(err);
-    })
+    });
     
 });
